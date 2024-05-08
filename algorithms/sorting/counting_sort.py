@@ -37,6 +37,7 @@ def counting_sort(array):
     # count array to obtain the value to be used as index-1 in
     # sorted array
     for i in range(len(array)):
+        print(i)
         current_element = array[i]
         value_from_count = count[current_element]-1
         count[current_element] = value_from_count
@@ -49,5 +50,5 @@ def counting_sort(array):
     print(f"\nsorted array : {array}")
 
 if __name__ == '__main__':
-    array = [3,2,4,5,1,1,5,4,2,6,7,8,5]
+    array = [4,5,8,2,1]
     counting_sort(array)
