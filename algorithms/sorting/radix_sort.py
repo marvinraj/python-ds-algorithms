@@ -1,6 +1,14 @@
 # radix sort algorithm
 
 """
+HOW RADIX WORKS --
+
+Radix algorithm sorts an array by individual digits, starting from the least significant digit to 
+the most significant digit. Essentially, this algorithm sorts elements by first grouping the 
+individual digits of the same place value and then the elements are sorted according to their 
+increasing or decreasing order
+
+
 STEPS --
 
 1. get array to sort

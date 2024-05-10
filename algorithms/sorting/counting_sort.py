@@ -2,19 +2,26 @@
 # links - https://www.programiz.com/dsa/counting-sort
 
 """ 
+HOW COUNTING WORKS --
+
+Counting sort works by sorting the elements of an array by counting the number of
+occurrences of each unique element in the array. The counts is then used to
+determine the postions of each element in the sorted array.
+
+
 STEPS --
-1 -- get unsorted array
-2 -- find the max element in the unsorted array
-3 -- create a 'count' array length of max+1
-4 -- get the count of each element in the array -- store in a count array
-5 -- get cummulative value of the count array
-6 -- the values in the count array correspond to the index in the sorted array 
+
+1. get unsorted array
+2. find the max element in the unsorted array
+3. create a 'count' array length of max+1
+4. get the count of each element in the array -- store in a count array
+5. get cummulative value of the count array
+6. the values in the count array correspond to the index in the sorted array 
 (example - value 4 in unsorted array, so find the value at index 4 in the count array, 
-that value-1 is then the index of value 4 in a the sorted array)
-7 -- if there are similar values in the unsorted array, the value/count in the 
+that value-1 is then the index for value 4 in a the sorted array)
+7. if there are similar values in the unsorted array, the value/count in the 
 count array that corresponds to the similar values needs to be added by 1 
 """
-
 
 def counting_sort(array):
     print(f"array to sort : {array}")
